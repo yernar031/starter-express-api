@@ -21,7 +21,8 @@ app.post('/parse', (req, res) => {
             'Accept': 'application/json'
         },
         body: JSON.stringify({
-            "name": `${fullName}, ${number}`
+            "name": `Имя: ${fullName} | Номер: ${number} | Установка : ${time}`,
+            "idLabels": ["6081819724f11404f188d491"]
         })
     })
         .then(response => {
