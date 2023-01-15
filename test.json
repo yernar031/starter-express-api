@@ -1,0 +1,107 @@
+{
+    "lead_data": {
+      "quiz_sys_name": "BIOLUX",
+      "quiz_title": "5 сұраққа жауап беріп",
+      "quiz_description": "1 айға BIOLUX UNO фильтрін тегін орнатуға мүмкіндік алыңыз",
+      "language": "ru",
+      "discount_final_volume": 0,
+      "questions": [
+        {
+          "question_title": "Аты-жөніңіз",
+          "question_kind": "text",
+          "question_number": 1,
+          "answer": {
+            "answer_value": "Adilbek",
+            "answer_image": "",
+            "answer_units": ""
+          }
+        },
+        {
+          "question_title": "Телефон номеріңіз",
+          "question_kind": "text",
+          "question_number": 2,
+          "answer": {
+            "answer_value": "+77777777",
+            "answer_image": "",
+            "answer_units": ""
+          }
+        },
+        {
+          "question_title": "Шымкент қаласының қай жерінде тұрасыз?",
+          "question_kind": "option",
+          "question_number": 3,
+          "answer": {
+            "answer_value": "Енбекшинский район",
+            "answer_image": "",
+            "answer_units": ""
+          }
+        },
+        {
+          "question_title": "Үйіңізде су фильтрі орнатылған ба?",
+          "question_kind": "option",
+          "question_number": 4,
+          "answer": {
+            "answer_value": "Ия",
+            "answer_image": "",
+            "answer_units": ""
+          }
+        },
+        {
+          "question_title": "Суыңызда қақ (накипь) қалады ма? ",
+          "question_kind": "option_image",
+          "question_number": 5,
+          "answer": {
+            "answer_value": "Ия, қалады",
+            "answer_image": "https://storage.yandexcloud.net/senquiz/3e091bb0-ff9a-44b2-b6ff-1c59e7ff9ae2.jpg",
+            "answer_units": ""
+          }
+        },
+        {
+          "question_title": "1 айға cу фильтрін ұтып алсаңыз, үйіңізге қанша күн ішінде қойдыртуға дайынсыз? ",
+          "question_kind": "option",
+          "question_number": 6,
+          "answer": {
+            "answer_value": "1-2 күнде",
+            "answer_image": "",
+            "answer_units": ""
+          }
+        },
+        {
+          "question_title": "Сапалы су фильтрі үшін айына қанша қаражат бөлуге дайынсыз? ",
+          "question_kind": "option",
+          "question_number": 7,
+          "answer": {
+            "answer_value": "14,900 тенге",
+            "answer_image": "",
+            "answer_units": ""
+          }
+        }
+      ],
+      "result": {
+        "result_kind": "text",
+        "result_value": "Жауабыңызға рахмет. Біз сағат 21:00 ге дейін жұмыс жасаймыз. Егерде осы уақытқа дейін тестті өтсеңіз сізге 30 минут ішінде хабарласамыз. Немесе ертесіне хабарласамыз"
+      },
+      "answer_1": "Adilbek",
+      "answer_2": "+77777777",
+      "answer_3": "Енбекшинский район",
+      "answer_4": "Ия",
+      "answer_5": "Ия, қалады",
+      "answer_6": "1-2 күнде",
+      "answer_7": "14,900 тенге"
+    },
+    "contacts": {
+      "email": "",
+      "name": "",
+      "phone": "",
+      "skype": "",
+      "telegram": "",
+      "whatsapp": ""
+    },
+    "roistat_cookie": "",
+    "url": "https://quiz.biolux.kz/",
+    "utm_source": "",
+    "utm_campaign": "",
+    "utm_medium": "",
+    "utm_term": "",
+    "utm_content": ""
+  }
