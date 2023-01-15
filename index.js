@@ -15,7 +15,7 @@ app.post('/parse', (req, res) => {
     time = lead_data.answer_6
     price = lead_data.answer_7;
     console.log(fullName, number, region, filter, limescale, time, price)
-    fetch(`https://api.trello.com/1/cards?idList=VSNc7MOb&key=6966bdeabfac507a5674d37a611710a2&token=ATTA692f55a135390459173fe088de3bb6fb4af7138698944e3a04d1c20be571224387104FDE`, {
+    fetch(`https://api.trello.com/1/cards?idList=60818195d6c5c48e9ab0638e&key=6966bdeabfac507a5674d37a611710a2&token=ATTA692f55a135390459173fe088de3bb6fb4af7138698944e3a04d1c20be571224387104FDE`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json'
