@@ -2,6 +2,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const app = express()
+let counter = 0;
+let boardId = ""
 
 app.use(bodyParser.json())
 
@@ -18,7 +20,14 @@ app.post('/parse', (req, res) => {
     formdata.append("name", `Имя: ${fullName} | Номер: ${number} | Установка : ${time}`);
     formdata.append("idLabels", ["6081819724f11404f188d491"])
     formdata.append("desc", `Район: ${region}\nCу фильтр бар ма: ${filter}\nҚанша төлеуге дайын: ${price}`)
-    fetch(`https://api.trello.com/1/cards?idList=60818195d6c5c48e9ab0638e&key=6966bdeabfac507a5674d37a611710a2&token=ATTA692f55a135390459173fe088de3bb6fb4af7138698944e3a04d1c20be571224387104FDE`, {
+    if (counter == 0) {
+        boardId = "63c48b8a98a005037b05c9c5";
+        counter = 1;
+    } else if (counter == 1) {
+        boardId = "63c48b6bb88f130277f8e54b";
+        counter = 0;
+    }
+    fetch(`https://api.trello.com/1/cards?idList=${boardId}&key=6966bdeabfac507a5674d37a611710a2&token=ATTA692f55a135390459173fe088de3bb6fb4af7138698944e3a04d1c20be571224387104FDE`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json'
