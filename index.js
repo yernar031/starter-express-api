@@ -20,9 +20,9 @@ app.post('/parse', (req, res) => {
         headers: {
             'Accept': 'application/json'
         },
-        params: {
+        body: JSON.stringify({
             "name": `${fullName}, ${number}`
-        }
+        })
     })
         .then(response => {
             console.log(
