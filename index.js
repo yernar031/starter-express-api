@@ -28,10 +28,9 @@ app.post('/parse', (req, res) => {
             console.log(
                 `Response: ${response.status} ${response.statusText}`
             );
-            return response.text();
+            res.send(response);
         })
         .then(text => console.log(text))
         .catch(err => console.error(err));
-    res.send('Yo!')
 })
 app.listen(process.env.PORT || 3000)
