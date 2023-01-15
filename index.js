@@ -14,6 +14,10 @@ app.post('/parse', (req, res) => {
     limescale = lead_data.answer_5;
     time = lead_data.answer_6
     price = lead_data.answer_7;
+    console.log(JSON.stringify({
+        "name": `Имя: ${fullName} | Номер: ${number} | Установка : ${time}`,
+        "idLabels": ["6081819724f11404f188d491"]
+    }))
     fetch(`https://api.trello.com/1/cards?idList=60818195d6c5c48e9ab0638e&key=6966bdeabfac507a5674d37a611710a2&token=ATTA692f55a135390459173fe088de3bb6fb4af7138698944e3a04d1c20be571224387104FDE`, {
         method: 'POST',
         headers: {
