@@ -31,7 +31,7 @@ app.post('/parse', (req, res) => {
             );
             return response.text();
         })
-        .then(text => console.log(text))
-        .catch(err => console.error(err));
+        .then(text => res.send(text))
+        .catch(err => res.send(err));
 })
 app.listen(process.env.PORT || 3000)
