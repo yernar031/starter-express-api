@@ -17,7 +17,7 @@ app.post('/parse', (req, res) => {
     const time = lead_data.answer_6
     const price = lead_data.answer_7;
     var formdata = new FormData();
-    formdata.append("name", `Имя: ${fullName} | Номер: ${number} | Установка : ${time}`);
+    formdata.append("name", `Имя: ${fullName} | Номер: ${number} | Установка: ${time}`);
     formdata.append("desc", `Район: ${region}\nCу фильтр бар ма: ${filter}\nҚанша төлеуге дайын: ${price}`)
     if (counter == 0) {
         formdata.append("idLabels", ["63c48b8a98a005037b05c9f5"])
@@ -51,7 +51,7 @@ app.post('/parse2', (req, res) => {
     const number = lead_data.answer_2;
     const address = lead_data.answer_3
     var formdata = new FormData();
-    formdata.append("name", `Имя: ${fullName} | Номер: ${number} | Адресс : ${address}`);
+    formdata.append("name", `Имя: ${fullName} | Номер: ${number} | Адресс: ${address}`);
     if (counter == 0) {
         formdata.append("idLabels", ["63c48b8a98a005037b05c9f8"])
         boardId = "63c48b8a98a005037b05c9c5";
