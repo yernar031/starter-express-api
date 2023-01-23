@@ -52,15 +52,19 @@ app.post('/parse2', (req, res) => {
     const address = lead_data.answer_3
     var formdata = new FormData();
     formdata.append("name", `Имя: ${fullName} | Номер: ${number} | Адресс: ${address}`);
-    if (counter == 0) {
-        formdata.append("idLabels", ["63c48b8a98a005037b05c9f8"])
-        boardId = "63c48b8a98a005037b05c9c5";
-        counter = 1;
-    } else if (counter == 1) {
-        formdata.append("idLabels", ["63c48b6bb88f130277f8e57e"])
-        boardId = "63c48b6bb88f130277f8e54b";
-        counter = 0;
-    }
+    // if (counter == 0) {
+    //     formdata.append("idLabels", ["63c48b8a98a005037b05c9f8"])
+    //     boardId = "63c48b8a98a005037b05c9c5";
+    //     counter = 1;
+    // } else if (counter == 1) {
+    //     formdata.append("idLabels", ["63c48b6bb88f130277f8e57e"])
+    //     boardId = "63c48b6bb88f130277f8e54b";
+    //     counter = 0;
+    // }
+
+    formdata.append("idLabels", ["63c48b6bb88f130277f8e57e"])
+    boardId = "63c48b6bb88f130277f8e54b";
+
     fetch(`https://api.trello.com/1/cards?idList=${boardId}&key=6966bdeabfac507a5674d37a611710a2&token=ATTA692f55a135390459173fe088de3bb6fb4af7138698944e3a04d1c20be571224387104FDE`, {
         method: 'POST',
         headers: {
